@@ -44,11 +44,13 @@ public class DBHelper extends SQLiteOpenHelper {
     public void insertSong(String title, String singer, int year, int stars) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues values = new ContentValues();
+
         values.put(COLUMN_TITLE, title);
         values.put(COLUMN_SINGER, singer);
         values.put(COLUMN_YEAR,  year);
         values.put(COLUMN_STARS,  stars);
         db.insert(TABLE_SONG, null, values);
+
         db.close();
 
     }
@@ -77,5 +79,34 @@ public class DBHelper extends SQLiteOpenHelper {
         cursor.close();
         db.close();
         return songs;
+    }
+
+    public int updateSong(Song song) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues values = new ContentValues();
+
+        values.put(COLUMN_TITLE, song.getTitle());
+        values.put(COLUMN_SINGER, song.getSingers());
+        values.put(COLUMN_YEAR, song.getYear());
+        values.put(COLUMN_STARS, song.getStars());
+        values.put(COLUMN_TITLE, song.getTitle());
+
+        String condition = COLUMN_ID + "= ?";
+        String[] args = {String.valueOf(song.get_id())};
+        int result = db.update(TABLE_SONG, values, condition, args);
+
+        db.close();
+        return result;
+    }
+
+    public int deleteSong(int id){
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        String condition = COLUMN_ID + "= ?";
+        String[] args = {String.valueOf(id)};
+        int result = db.delete(TABLE_SONG, condition, args);
+
+        db.close();
+        return result;
     }
 }

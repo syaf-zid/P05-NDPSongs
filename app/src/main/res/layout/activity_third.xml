@@ -9,7 +9,6 @@
     tools:context=".ThirdActivity">
 
     <TextView
-        android:id="@+id/textViewSongID"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/tv_song_id" />
@@ -23,7 +22,6 @@
         android:inputType="textPersonName" />
 
     <TextView
-        android:id="@+id/textViewSongTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/et_song_title" />
@@ -36,7 +34,6 @@
         android:inputType="textPersonName" />
 
     <TextView
-        android:id="@+id/textViewSingers"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/tv_singers" />
@@ -49,9 +46,9 @@
         android:inputType="textPersonName" />
 
     <TextView
-        android:id="@+id/textViewYear"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:text="@string/tv_year" />
 
     <EditText
         android:id="@+id/editTextYear"
@@ -61,12 +58,12 @@
         android:inputType="textPersonName" />
 
     <TextView
-        android:id="@+id/textViewStars"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/tv_stars" />
 
     <RadioGroup
+        android:id="@+id/radioGroup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
