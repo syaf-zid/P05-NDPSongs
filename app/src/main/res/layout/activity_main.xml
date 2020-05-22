@@ -9,7 +9,6 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textViewSongTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/tv_song_title" />
@@ -23,7 +22,6 @@
         android:inputType="textPersonName" />
 
     <TextView
-        android:id="@+id/textViewSingers"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/tv_singers" />
@@ -37,7 +35,6 @@
         android:inputType="textPersonName" />
 
     <TextView
-        android:id="@+id/textViewYear"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/tv_year" />
@@ -51,7 +48,6 @@
         android:inputType="textPersonName" />
 
     <TextView
-        android:id="@+id/textViewStars"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/tv_stars" />
