@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">P05-NDPSongs</string>
+    <string name="tv_song_title">Song Title</string>
+    <string name="tv_singers">Singers</string>
+    <string name="tv_year">Year</string>
+    <string name="tv_stars">Stars</string>
+    <string name="tv_song_id">Song ID</string>
+
+    <string name="et_song_title">Enter song title here</string>
+    <string name="et_singers">Enter singer\'s name here</string>
+    <string name="et_year">Enter year of release here</string>
+
+    <string name="btn_insert">Insert</string>
+    <string name="btn_show_list">Show List</string>
+    <string name="btn_show_songs">Show all songs with 5 stars</string>
+    <string name="btn_update">Update</string>
+    <string name="btn_delete">Delete</string>
+    <string name="btn_cancel">Cancel</string>
 </resources>
